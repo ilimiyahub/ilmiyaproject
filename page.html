@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, 
+initial-scale=1.0" />
+  <title>Ilmiya Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:
+ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&
+display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <a class="nav-logo" href="#">
+      <div class="nav-logo-icon">
+        📖
+      </div>
+      <div>
+        <div class="nav-logo-text">Ilmiya Hub</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="active" data-i18n="home">Home</a></li>
+      <li><a href="#courses" data-i18n="basics">Basics</a></li>
+      <li><a href="#courses" data-i18n="intermediate">Intermediate</a></li>
+      <li><a href="#courses" data-i18n="advance">Advance</a></li>
+      <li><a href="#about" data-i18n="about">About</a></li>
+      <li><a href="#contact" data-i18n="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="toggle-btn" id="themeToggle" title="Toggle dark/light mode">☀️</button>
+      <button class="toggle-btn" id="langToggle" title="Switch language">HA</button>
+      <button class="btn-login" data-i18n="login">Login</button>
+      <button class="btn-register" data-i18n="register">Register</button>
+    </div>
+  </nav>
+  <script src="app.js"></script>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="orb1"></div>
+    <div class="orb2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        🎧
+        <span data-i18n="spotifyKnowledge">Spotify for Knowledge</span>
+      </div>
+      <h1 class="hero-title">ILMIYA<br /><span class="orange italic">Hub!</span></h1>
+      <div class="hero-sub" data-i18n="futureEducation">The Future of Education in Arewa</div>
+      <p class="hero-desc" data-i18n="heroDesc">Making learning simple, digital, and inclusive for every Northern Nigerian learner — from students to professionals, from urban areas to remote villages. In Hausa and English.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" data-i18n="startNow">
+          🚀
+          Start Now</button>
+        <button class="btn-secondary" data-i18n="registerFree">Register Free →</button>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">3</div>
+          <div class="stat-label" data-i18n="learningLevels">Learning Levels</div>
+        </div>
+        <div>
+          <div class="stat-num">7+</div>
+          <div class="stat-label" data-i18n="skillsAvailable">Skills Available</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label" data-i18n="languages">Languages</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card-group">
+      <div class="float-card">
+        <div class="float-label">
+          🤖
+          <span data-i18n="ilmiyaAI">Ilmiya AI Active</span></div>
+        <div class="float-course" data-i18n="mathBasics">Mathematics — Basics Level</div>
+        <div class="float-bar">
+          <div class="float-fill"></div>
+        </div>
+        <div class="float-pct" data-i18n="completePercent">62% complete · 2 lessons left</div>
+        <div class="float-users">
+          👨👩🧑
+          <span data-i18n="learningNow">+240 learning now</span></div>
+      </div>
+      <div class="info-card">
+        <div class="info-label" data-i18n="culturalLearning">🕌 Cultural Learning</div>
+        <div class="info-title" data-i18n="islamicEducation">Islamic Education & Culture</div>
+        <p data-i18n="islamicDesc">At Ilmiya Hub, we blend modern learning with Arewa's Islamic heritage. Our pathway includes Islamic studies, Hausa language, and values-based learning that empowers learners with both faith and future-ready skills.</p>
+        <button class="card-btn" data-i18n="exploreIslamic">Explore the Islamic Path →</button>
+      </div>
+    </div>
+  </section>
+  <div class="mission">
+    <div>
+      <div class="mission-tag" data-i18n="ourMission">Our Mission</div>
+      <div class="mission-text" data-i18n="missionText">Making quality education available to every
+        Hausa-speaking learner, anywhere and anytime.</div>
+    </div>
+    <div class="mdiv"></div>
+    <div>
+      <div class="mission-tag" data-i18n="ourVision">Our Vision</div>
+      <div class="mission-text" data-i18n="visionText">Empowering Hausa-speaking learners through
+        accessible, innovative, culturally relevant
+        education.</div>
+    </div>
+    <div class="mdiv"></div>
+    <div>
+      <div class="mission-tag" data-i18n="ourMotto">Our Motto</div>
+      <div class="mission-text" data-i18n="mottoText">Ilmiya — The House of Knowledge. Blending
+        modern learning with Hausa culture and language.</div>
+    </div>
+  </div>
+  <section class="section" id="courses">
+    <div class="sec-head">
+      <div>
+        <div class="sec-tag" data-i18n="learningPath">
+          📚
+          Learning Path</div>
+        <div class="sec-title" data-i18n="startJourney">Start Your Journey</div>
+      </div>
+      <button class="see-all" data-i18n="seeAll">See All →</button>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card"><span class="c-emoji">
+          🌱
+        </span><span class="c-tag tag-free" data-i18n="freeBasics">Free ·
+          Basics</span>
+        <div class="c-name" data-i18n="hausalang">Hausa Language</div>
+        <div class="c-desc" data-i18n="masterReading">Master reading, writing and speaking with
+          confidence.</div>
+        <div class="c-foot">
+          <div class="c-lang"><span class="ldot"></span><span data-i18n="hausaEnglish">Hausa / English</span></div>
+          <div class="c-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card"><span class="c-emoji">
+          ➕
+        </span><span class="c-tag tag-free" data-i18n="freeBasics">Free ·
+          Basics</span>
+        <div class="c-name" data-i18n="mathematics">Mathematics</div>
+        <div class="c-desc" data-i18n="mathDesc">Numbers, problem solving and logical
+          thinking.</div>
+        <div class="c-foot">
+          <div class="c-lang"><span class="ldot"></span><span data-i18n="hausaEnglish">Hausa / English</span></div>
+          <div class="c-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card"><span class="c-emoji">
+          🧠
+        </span><span class="c-tag tag-free" data-i18n="freeIntermediate">Free ·
+          Intermediate</span>
+        <div class="c-name" data-i18n="psychology">Psychology</div>
+        <div class="c-desc" data-i18n="psychologyDesc">Understand the human mind, emotions and social
+          behaviour.</div>
+        <div class="c-foot">
+          <div class="c-lang"><span class="ldot"></span><span data-i18n="hausaEnglish">Hausa / English</span></div>
+          <div class="c-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card"><span class="c-emoji">
+          💡
+        </span><span class="c-tag tag-paid" data-i18n="paidAdvanced">Paid ·
+          Advanced</span>
+        <div class="c-name" data-i18n="emotionalIntel">Emotional
+          Intelligence</div>
+        <div class="c-desc" data-i18n="emotionalDesc">Build leadership, empathy
+          and professional skills.</div>
+        <div class="c-foot">
+          <div class="c-lang"><span class="ldot"></span><span data-i18n="hausaEnglish">Hausa /
+            English</span></div>
+          <div class="c-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <span class="c-emoji">
+          🌐
+        </span><span class="c-tag tag-paid" data-i18n="paidAdvanced">Paid ·
+          Advanced</span>
+        <div class="c-name" data-i18n="globalAwareness">Global
+          Awareness</div>
+        <div class="c-desc" data-i18n="globalDesc">Connect with global issues, cultures and
+          opportunities.</div>
+        <div class="c-foot">
+          <div class="c-lang"><span class="ldot"></span><span data-i18n="hausaEnglish">Hausa /
+            English</span></div>
+          <div class="c-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <span class="c-emoji">
+          🧑‍💻
+        </span><span class="c-tag tag-paid" data-i18n="paidIntermediate">Paid ·
+          Intermediate</span>
+        <div class="c-name" data-i18n="careerSkills">Career
+          Skills</div>
+        <div class="c-desc" data-i18n="careerDesc">CV writing, interview prep and job search
+          strategies.</div>
+        <div class="c-foot">
+          <div class="c-lang"><span class="ldot"></span><span data-i18n="hausaEnglish">Hausa /
+            English</span></div>
+          <div class="c-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-section">
+    <div class="sec-tag" data-i18n="skillsBar">
+      ⚡
+      Skills Bar</div>
+    <div class="sec-title" data-i18n="centurySkills">21st Century Skills for Arewa
+      Youth</div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="sk-icon">
+          💻
+        </div>
+        <div class="sk-name" data-i18n="softwareDev">Software Dev & Coding</div>
+        <div class="sk-desc" data-i18n="webApps">Web & mobile apps</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          📈
+        </div>
+        <div class="sk-name" data-i18n="forexTrading">Forex & Crypto Trading</div>
+        <div class="sk-desc" data-i18n="financialMarkets">Financial markets</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          🏠
+        </div>
+        <div class="sk-name" data-i18n="realEstate">Real Estate</div>
+        <div class="sk-desc" data-i18n="propertyHousing">Property &
+          smart housing</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          🛡
+        </div>
+        <div class="sk-name" data-i18n="cybersecurity">Cybersecurity</div>
+        <div class="sk-desc" data-i18n="digitalDefense">Digital
+          defense</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          📣
+        </div>
+        <div class="sk-name" data-i18n="digitalMarketing">Digital Marketing</div>
+        <div class="sk-desc" data-i18n="seoContent">SEO,
+          content & branding</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          🤖
+        </div>
+        <div class="sk-name" data-i18n="aiMachine">AI & Machine Learning</div>
+        <div class="sk-desc" data-i18n="automationAI">Automation & AI thinking</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          🔧
+        </div>
+        <div class="sk-name" data-i18n="roboticsIoT">Robotics & IoT</div>
+        <div class="sk-desc" data-i18n="smartSystems">Smart
+          systems</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-icon">
+          🎨
+        </div>
+        <div class="sk-name" data-i18n="graphicDesign">Graphic Design</div>
+        <div class="sk-desc" data-i18n="visualComm">Visual communication</div>
+      </div>
+    </div>
+  </section>
+  <section class="ai-section" id="about">
+    <div>
+      <div class="ai-label" data-i18n="aiIntegration">
+        🤖
+        AI Integration</div>
+      <h2 class="ai-title"><span data-i18n="meetIlmiya">Meet Ilmiya</span> —<br />Your AI
+        Tutor</h2>
+      <p class="ai-desc" data-i18n="aiDesc">Your personal AI learning companion. Ask
+        questions, get explanations, practice assignments — all in Hausa
+        or English. Available 24/7 for every learner.</p>
+      <button class="btn-primary" data-i18n="talkToIlmiya">Talk to Ilmiya AI
+
+
+      </button>
+    </div>
+    <div class="ai-box">
+      <div class="chat-lbl">
+        🤖
+        Ilmiya AI</div>
+      <div class="chat-out">Sannu! Ina son taimaka maka koyo. Me
+        kake son koyo yau?
+
+
+        <br /><small style="opacity:0.8">(Hello!
+          What do you want to learn today?)</small>
+      </div>
+      <div class="chat-in">I want to learn Mathematics — Basics
+        Level!</div>
+      <div class="chat-out">Kyau! Let's start step by step
+        together. 1 + 1 = 2. Simple!
+        ✨
+      </div>
+    </div>
+  </section>
+  <div class="cta">
+    <div>
+      <div class="cta-title" data-i18n="readyToStart">Ready to Start Learning?<br /><span data-i18n="joinIlmiya">Join
+        Ilmiya Hub Today.</span></div>
+      <div class="cta-sub" data-i18n="noExcuses">Free access to Basics & Intermediate.
+        No excuses — just knowledge.
+
+
+      </div>
+    </div>
+    <button class="cta-btn" data-i18n="startNowFree">
+      🚀
+      Start Now — It's Free</button>
+  </div>
+  <footer id="contact">
+    <div>
+      <div class="f-logo">Ilmiya Hub</div>
+      <div class="f-tag">
+        🎧
+        <span data-i18n="spotifyKnowledge">Spotify for Knowledge</span> · Arewa</div>
+    </div>
+    <ul class="f-links">
+      <li><a href="#" data-i18n="home">Home</a></li>
+      <li><a href="#" data-i18n="courses">Courses</a></li>
+      <li><a href="#" data-i18n="skills">Skills</a></li>
+      <li><a href="#" data-i18n="about">About</a></li>
+      <li><a href="#" data-i18n="contact">Contact</a></li>
+    </ul>
+    <div class="f-copy">© 2026 Ilmiya Hub. All rights
+      reserved.</div>
+  </footer>
+</body>
+
+</html>

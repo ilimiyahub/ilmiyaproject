@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Premium Online Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 2px 7px -1px rgba(0, 0, 0, 0.1), 0 2px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top center, rgb(255, 255, 255), transparent);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <header class="glass-header bg-white sticky top-0 z-50 transition-all">
+        <nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+
+                <span
+                    class="text-xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600">
+                    Ilmiya.<span class="text-green-500">Hub</span></span>
+            </a>
+
+            <ul class="hidden lg:flex items-center gap-8 text-[15px] font-semibold text-slate-600">
+                <li><a href="#hero" class="hover:text-green-500 transition-colors">Home</a></li>
+                <li><a href="#courses" class="hover:text-green-500 transition-colors">Courses</a></li>
+                <li><a href="#basic" class="hover:text-green-500 transition-colors">Basic</a></li>
+                <li><a href="#advance" class="hover:text-green-500 transition-colors">Advance</a></li>
+                <li><a href="#intermediate" class="hover:text-green-500 transition-colors">Intermediate</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <a href="#"
+                    class="hidden md:block text-[15px] font-bold text-slate-700 hover:text-green-500 transition-colors">Sign
+                    In</a>
+                <a href="#"
+                    class="bg-green-500 hover:bg-green-700 text-white px-6 py-2 rounded-sm font-bold shadow-xl shadow-green-500/20 transition-all hover:-translate-y-0.5 active:scale-95">
+                    Get Started
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-gradient relative pt-12 pb-24 overflow-hidden" id="hero">
+        <div class="container mx-auto px-6 lg:flex items-center gap-16">
+
+            <div class="lg:w-1/2">
+                <div
+                    class="inline-flex items-center text-green-500 gap-2 px-4 py-2 bg-green-50 border border-green-200 border-dotted rounded-full text-green-700 text-sm font-bold mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
+                    </span>
+                    <span class="text-green-500">New Courses Available</span>
+                </div>
+
+                <h1 class="text-3xl lg:text-6xl font-bold leading-[1.1] text-slate-900 mb-6">
+                    ILMIYA HUB<br />
+                    <span class="text-green-500 ">Online Anytime, Anywhere.</span>
+                </h1>
+
+                <p class="text-lg text-slate-600 leading-relaxed mb-10 max-w-xl">
+                    Join over <span class="text-slate-900 font-bold">50,000+ students</span> learning from world-class
+                    mentors. Transform your career with industry-leading curriculum.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#!"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-700 text-white px-5 py-2 rounded-full font-bold text-lg shadow-2xl shadow-green-500/30 transition-all">
+                        Start Learning
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="flex items-center justify-center gap-2 bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 px-5 py-2 rounded-full font-bold text-lg transition-all">
+                        <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                        YouTube Channel
+                    </a>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-8">
+                    <div>
+                        <p class="text-2xl font-black text-slate-900">50K+</p>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Students</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-black text-slate-900">200+</p>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Courses</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-black text-slate-900">4.9/5</p>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 mt-16 lg:mt-0 relative">
+                <div class="relative z-10 p-4 bg-white rounded-[40px] shadow-2xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
+                        alt="Learning"
+                        class="rounded-[32px] w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <div class="absolute inset-0 flex items-center justify-center">
+
+                    </div>
+                </div>
+                <div class="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3 z-20">
+                    <div class="flex -space-x-3">
+                        <div class="w-10 h-10 rounded-full text-center border-2 border-white bg-green-200">
+                            <span class="text-xs text-center mt-2 font-bold text-slate-800">JD</span>
+                        </div>
+                        <div class="w-10 h-10 rounded-full text-center border-2 border-white bg-green-200">
+                            <span class="text-xs text-center mt-2 font-bold text-slate-800">AS</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-bold">Join 50k+<br /><span
+                            class="text-slate-500 font-medium text-xs">Students</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white" id="courses">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-green-500 font-bold tracking-[0.2em] uppercase text-sm">Courses</span>
+                <h2 class="text-4xl lg:text-5xl font-black mt-4 mb-6 leading-tight">Explore Our Popular <span
+                        class="text-green5600">Courses</span></h2>
+                <p class="text-slate-600">Choose from hundreds of courses designed by industry experts to help you
+                    achieve your professional goals.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+                            alt="Dev"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <span
+                            class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Development</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-lg font-black mb-4 group-hover:text-green-500 transition-colors leading-snug">
+                            Web Development Bootcamp 2026</h3>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 rounded-full bg-slate-300"></div>
+                            <span class="text-sm font-bold text-slate-700">Trisha Leo</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-black text-green5600">$49</span>
+                            <a href="#" class="flex items-center gap-1 font-bold text-slate-800 text-sm">
+                                Enroll Now
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80"
+                            alt="Design"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <span
+                            class="absolute top-4 left-4 bg-purple-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Design</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-lg font-black mb-4 group-hover:text-green-500 transition-colors leading-snug">
+                            UI/UX Design Masterclass</h3>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 rounded-full bg-slate-300"></div>
+                            <span class="text-sm font-bold text-slate-700">Sarah Johnson</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-black text-green5600">$79</span>
+                            <a href="#" class="flex items-center gap-1 font-bold text-slate-800 text-sm">
+                                Enroll Now
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80"
+                            alt="Marketing"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <span
+                            class="absolute top-4 left-4 bg-blue-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Marketing</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-lg font-black mb-4 group-hover:text-green-500 transition-colors leading-snug">
+                            Digital Marketing 101</h3>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 rounded-full bg-slate-300"></div>
+                            <span class="text-sm font-bold text-slate-700">Michael Lee</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-black text-green5600">$59</span>
+                            <a href="#" class="flex items-center gap-1 font-bold text-slate-800 text-sm">
+                                Enroll Now
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
+                                alt="Data Science"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <span
+                                class="absolute top-4 left-4 bg-green-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Data Science</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-lg font-black mb-4 group-hover:text-green-500 transition-colors leading-snug">
+                                Data Science A-Z</h3>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-300"></div>
+                                <span class="text-sm font-bold text-slate-700">Emily Davis</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-black text-green-500">$99</span>
+                            <a href="#" class="flex items-center gap-1 font-bold text-slate-800 text-sm">
+                                Enroll Now
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-16">
+                        <a href="#"
+                            class="inline-flex items-center gap-3 bg-slate-900 text-white px-10 py-4 rounded-full font-bold hover:bg-slate-800 transition-all">
+                            View All Courses
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    </section>
+
+    <!-- skill section -->
+    <section class="py-24" id="basic">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-green-500 font-bold tracking-[0.2em] uppercase text-sm">Skills</span>
+                <h2 class="text-4xl lg:text-5xl font-black mt-4 mb-6 leading-tight">Master Essential <span class="text-green-500">Skills</span></h2>
+                <p class="text-slate-600">Gain in-demand skills with our expert-led courses. From coding to design, we have everything you need to succeed.</p>
+            </div>
+        </div>
+        <!-- skill cards -->
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+                        alt="Dev"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <span
+                        class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Development</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-lg font-black mb-4 group-hover:text-orange-500 transition-colors leading-snug">
+                        Web Development</h3>
+                    <p class="text-slate-600 mb-6">Learn the fundamentals of web development with our comprehensive course.</p>
+                    <a href="#" class="text-orange-500 font-bold flex items-center gap-2 hover:text-orange-600 transition-colors">
+                        Learn More
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+                        alt="Dev"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <span
+                        class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Design</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-lg font-black mb-4 group-hover:text-orange-500 transition-colors leading-snug">
+                        ui Design</h3>
+                    <p class="text-slate-600 mb-6">Learn the fundamentals of ui design with our comprehensive course.</p>
+                    <a href="#" class="text-orange-500 font-bold flex items-center gap-2 hover:text-orange-600 transition-colors">
+                        Learn More
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+                        alt="Dev"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <span
+                        class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Marketing</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-lg font-black mb-4 group-hover:text-orange-500 transition-colors leading-snug">
+                        Digital Marketing</h3>
+                    <p class="text-slate-600 mb-6">Learn the fundamentals of digital marketing with our comprehensive course.</p>
+                    <a href="#" class="text-orange-500 font-bold flex items-center gap-2 hover:text-orange-600 transition-colors">
+                        Learn More
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-slate-50 rounded-[32px] overflow-hidden border border-slate-100 card-hover group">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+                        alt="Dev"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <span
+                        class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Data Science</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-lg font-black mb-4 group-hover:text-orange-500 transition-colors leading-snug">
+                        Data Science</h3>
+                    <p class="text-slate-600 mb-6">Learn the fundamentals of data science with our comprehensive course.</p>
+                    <a href="#" class="text-orange-500 font-bold flex items-center gap-2 hover:text-orange-600 transition-colors">
+                        Learn More
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- smart footer section with 4 col smart  -->
+     <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-bold mb-4">Ilmiya Hub</h3>
+                <p class="text-sm text-slate-400">Your gateway to premium online learning. Join thousands of students and start your journey today.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="text-sm text-slate-400 space-y-2">
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Home</a></li>
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Courses</a></li>
+                    <li><a href="#" class="hover:text-green-500 transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Resources</h3>
+                <ul class="text-sm text-slate-400 space-y-2">
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Help Center</a></li>
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-green-500 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                <p class="text-sm text-slate-400 mb-2">Have questions? We're here to help!</p>
+                <p class="text-sm text-slate-400"><strong>Email:</strong> info@ilmiyahub.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
